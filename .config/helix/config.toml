@@ -1,0 +1,8 @@
+theme = "onelight"
+
+[editor]
+line-number = "relative"
+cursor-shape.insert = "bar"
+cursor-shape.select = "underline"
+cursorline = true
+true-color = true

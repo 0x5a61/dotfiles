@@ -1,0 +1,2 @@
+[language-server.lua-lsp]
+command = "~/create/lua/.lua-language-server/bin/lua-language-server"
