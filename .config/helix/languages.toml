@@ -1,2 +1,7 @@
 [language-server.lua-lsp]
 command = "~/create/lua/.lua-language-server/bin/lua-language-server"
+
+[language-server.vala]
+command = "vala-language-server"
+file-types = ["vala", "vapi"]
+indent = { tab-width = 1, unit = "    " }

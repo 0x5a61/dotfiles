@@ -1,3 +1,5 @@
+# theme = "jetbrains_dark"
+# theme = "gruvbox-material"
 theme = "onelight"
 
 [editor]
@@ -6,3 +8,4 @@ cursor-shape.insert = "bar"
 cursor-shape.select = "underline"
 cursorline = true
 true-color = true
+mouse = true

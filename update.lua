@@ -2,7 +2,7 @@
 local configs = {
   "helix",
   "fish",
-  "alacritty",
+  "hypr",
 }
 
 os.execute("mkdir -p .config")
