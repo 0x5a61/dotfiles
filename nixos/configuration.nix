@@ -54,42 +54,56 @@
       alacritty
       git
       fastfetch
-      btop
       firefox
       tldr
+      nautilus
+      helix
+      bat
+      hyprls
     ];
   };
 
   services.displayManager.ly.enable = true;
-
   programs.fish.enable = true;
-
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
   };
 
-  nixpkgs.config.allowUnfree = true;
-
   environment.systemPackages = with pkgs; [
-    helix
     fuzzel
     wl-clipboard
     wlsunset
-    hyprpaper
-    brightnessctl
     playerctl
+    brightnessctl
+    adwaita-icon-theme
+    hyprpolkitagent
+    hyprpaper
   ];
 
   fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-emoji
-    maple-mono.CN
+    maple-mono.NF
     adwaita-fonts
-    nerd-fonts.lilex
+    nerd-fonts."m+"
   ];
 
+  programs.dconf.profiles.user.databases = [
+    {
+      settings."org/gnome/desktop/interface" = {
+        gtk-theme = "Adwaita";
+        icon-theme = "Adwaita";
+        font-name = "Adwaita Sans Medium 12";
+        document-font-name = "Adwaita Sans Medium 12";
+        monospace-font-name = "Maple Mono NL Medium 12";
+      };
+    }
+  ];
+
+  nixpkgs.config.allowUnfree = true;
   services.xserver.enable = false;
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
   # nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

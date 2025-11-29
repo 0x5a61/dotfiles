@@ -1,19 +1,14 @@
 [general]
-import = ["onelight.toml"]
+import = ["onedark.toml"]
 
 [window]
 dimensions.columns = 80
 dimensions.lines = 20
 padding.x = 4
 padding.y = 4
-decorations = "None"
 
 [font]
-normal.family = "Maple Mono"
-italic.family = "Maple Mono"
-bold_italic.family = "Maple Mono"
-size = 11.25
-
-[cursor]
-style.shape = "Block"
-thickness = 0.3
+normal.family = "Maple Mono NF"
+italic.family = "Maple Mono NF"
+bold_italic.family = "Maple Mono NF"
+size = 12

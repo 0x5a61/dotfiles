@@ -4,8 +4,10 @@ dirs=(
   helix
   hypr
   fish
+  alacritty
 )
 
 for dir in ${dirs[@]}; do
-  ln --symbolic -n /home/$USER/dotfiles/$dir /home/$USER/.config/$dir
+  ln --symbolic -n $HOME/dotfiles/$dir $HOME/.config/$dir
 done
+
