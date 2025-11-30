@@ -56,7 +56,6 @@
     shell = pkgs.fish;
     packages = with pkgs; [
       tree
-      git
       fastfetch
       firefox
       tldr
