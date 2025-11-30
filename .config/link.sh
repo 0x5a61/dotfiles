@@ -8,6 +8,5 @@ dirs=(
 )
 
 for dir in ${dirs[@]}; do
-  ln --symbolic -n $HOME/dotfiles/$dir $HOME/.config/$dir
+  ln --symbolic -n $HOME/dotfiles/.config/$dir $HOME/.config/$dir
 done
-
