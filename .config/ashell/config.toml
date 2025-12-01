@@ -1,6 +1,6 @@
 log_level = "warn"
 position = "Top"
-app_launcher_cmd = "fuzzel --font='Adwaita:size=10' --terminal='alacritty -e'"
+app_launcher_cmd = "fuzzel --terminal='alacritty -e'"
 enable_esc_key = true
 
 [modules]

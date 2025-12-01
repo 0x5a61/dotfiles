@@ -158,6 +158,7 @@
     networkmanagerapplet
     cliphist
     blueman
+    hyprshot
   ];
 
   services.displayManager.ly.enable = true;

@@ -6,6 +6,7 @@ dirs=(
   fish
   alacritty
   mako
+  fuzzel
 )
 
 for dir in ${dirs[@]}; do
