@@ -21,7 +21,7 @@
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = false;
-    powerManagement.finegrained = false;
+    powerManagement.finegrained = true;
     open = false;
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
@@ -91,7 +91,6 @@
       helix
       bat
       gnome-text-editor
-      vlc
       telegram-desktop
       libreoffice
       vscode
@@ -114,6 +113,9 @@
       lua-language-server
       bash-language-server
       pastel
+      showtime
+      decibels
+      wl-screenrec
     ];
   };
 
@@ -168,6 +170,9 @@
     blueman
     hyprpicker
     hyprshot
+    rose-pine-hyprcursor
+    xdg-desktop-portal
+    xdg-desktop-portal-hyprland
   ];
 
   services.displayManager.ly.enable = true;
