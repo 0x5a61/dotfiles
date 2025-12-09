@@ -82,6 +82,7 @@
     generateCompletions = true;
     shellAbbrs = {
       nd = "nix develop";
+      ta = "tmux a";
     };
 
   };
