@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -7,7 +7,7 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelParams = [ "i8042.nokbd" ];
+  boot.kernelParams = [ "i8042.nokbd" ]; # to disable laptop keyboard
   services.logind.settings.Login = {
     HandlePowerKey = "hibernate";
   };
@@ -86,7 +86,6 @@
     };
 
   };
-  programs.fish.shellAbbrs = { gco = "git checkout"; npu = "nix-prefetch-url"; };
 
   programs.git = {
     enable = true;
@@ -96,6 +95,8 @@
       user.email = "harikrishnamohan@proton.me";
     };
   };
+
+  programs.localsend.enable = true;
 
   programs.tmux = {
     enable = true;
@@ -116,9 +117,6 @@
 
       bind '"' split-window -c "#{pane_current_path}"
       bind % split-window -h -c "#{pane_current_path}"
-
-      bind-key -T copy-mode-vi 'v' send -X begin-selection
-      bind-key -T copy-mode-vi 'y' send -X copy-selection-and-cancel
 
       bind h select-pane -L
       bind j select-pane -D
@@ -165,6 +163,7 @@
       bash-language-server
       pastel
       ffmpeg-full
+      rnote
     ];
   };
 
