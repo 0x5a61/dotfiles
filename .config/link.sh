@@ -7,6 +7,7 @@ dirs=(
   alacritty
   fuzzel
   swaync
+  direnv
 )
 
 for dir in "${dirs[@]}"; do

@@ -139,9 +139,9 @@
       baobab # disk usage analyzer
       papers # document viewer
       snapshot # camera app
-      showtime # video player
       decibels # audio player
       resources # like btop
+      showtime # video player
       gnome-calculator
       gnome-calendar
       tree
@@ -153,19 +153,13 @@
       gimp
       obsidian
       pureref
-      python315
-      clang
-      lua
-      ty # lsp for python
-      lldb
-      clang-tools
-      lua-language-server
       bash-language-server
       pastel
       ffmpeg-full
       rnote
       man-pages
       man-pages-posix
+      direnv
     ];
   };
 
