@@ -81,7 +81,7 @@
     enable = true;
     generateCompletions = true;
     shellAbbrs = {
-      nd = "nix develop";
+      ns = "nix-shell";
       ta = "tmux a";
     };
 
@@ -160,6 +160,8 @@
       man-pages
       man-pages-posix
       direnv
+      pixelorama
+      gnome-characters
     ];
   };
 
