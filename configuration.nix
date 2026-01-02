@@ -77,6 +77,7 @@
   };
 
   programs.command-not-found.enable = true;
+  programs.nix-ld.enable = true;
   programs.fish = {
     enable = true;
     generateCompletions = true;
@@ -162,6 +163,10 @@
       direnv
       pixelorama
       gnome-characters
+      audacity
+      discord
+      davinci-resolve
+      godot
     ];
   };
 
