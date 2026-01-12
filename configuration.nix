@@ -77,7 +77,6 @@
   };
 
   programs.command-not-found.enable = true;
-  programs.nix-ld.enable = true;
   programs.fish = {
     enable = true;
     generateCompletions = true;
@@ -150,7 +149,6 @@
       firefox
       tldr
       telegram-desktop
-      libreoffice
       gimp
       obsidian
       pureref
@@ -165,8 +163,9 @@
       gnome-characters
       audacity
       discord
-      davinci-resolve
+      kdePackages.kdenlive
       godot
+      wpsoffice
     ];
   };
 
@@ -179,6 +178,8 @@
     maple-mono.NF
     adwaita-fonts
     nerd-fonts."m+"
+    corefonts
+    font-awesome
   ];
 
 
