@@ -155,8 +155,10 @@
       bash-language-server
       pastel
       ffmpeg-full
-      rnote
       man-pages
+      libwacom
+      xournalpp
+      rnote
       man-pages-posix
       direnv
       pixelorama
